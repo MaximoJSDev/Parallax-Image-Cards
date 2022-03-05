@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "raleway_m";
+  src: url("./assets/fonts/raleway-v22-cyrillic-300.woff2");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "raleway_m";
+  src: url("./assets/fonts/raleway-v22-cyrillic-900.woff2");
+  font-weight: 900;
+}
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+:root {
+  --dark: #070707;
+  --sizeIndex: calc(1vw + 1vh);
+}
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "raleway_m", sans-serif;
+  overflow: hidden;
+  line-height: 1.8;
+}
