@@ -27,3 +27,39 @@ body {
   overflow: hidden;
   line-height: 1.8;
 }
+.slider {
+  transform: rotate(15deg);
+  user-select: none;
+  cursor: grab;
+  overflow: visible;
+  top: 10vh;
+}
+.slier__wrapper {
+  transition: 600ms cubic-bezier(0.185, 0.53, 0, 1) !important;
+  will-change: transform;
+}
+.slider__item {
+  height: 75vh;
+  overflow: hidden;
+}
+.slider__img {
+  width: 300%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  left: -100%;
+  transition: 600ms cubic-bezier(0.185, 0.53, 0, 1) !important;
+  will-change: transform;
+}
+
+.slider_bg {
+  z-index: 0;
+  transform: rotate(-20deg) !important;
+  top: -64vh;
+  left: -17vh;
+  opacity: 0.17;
+  filter: saturate(20) blur(120px);
+}
+.slider_bg .slider__item {
+  height: 100vh;
+}
